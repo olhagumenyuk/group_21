@@ -1,0 +1,68 @@
+1)Посмотреть где я  pwd
+
+2) Создать папку  mkdir QA_course
+
+3) Зайти в папку  cd QA_course/
+
+4) Создать три папки mkdir {C1,D2,E2}
+
+5) Зайти в любую папку  cd C1/
+
+6) Создать 5 файлов (3 txt, 2 json) - touch {file_1,file_2,file_3}.txt | touch {file_4,file_5}.json
+
+7) Создать 3 папки  mkdir {Folder1,Folder2,Folder3}
+
+8) Вывести список содержимого папки ls -la Folder1/
+
+9) Открыть любой txt файл cat file_1.txt
+
+10) Написать туда что-нибудь, любой текст vim file_1.txt
+
+11) сохранить и выйти :wq
+
+12) Выйти из папки на уровень выше - cd ..
+
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку mv{file_1,file_2}.txt D2
+
+14) Скопировать любые 2 файла, которые вы создали, в любую другую папку
+cp {file_4,file_5}.json ~/E3/
+
+15) Найти файл по имени find -name file_1
+
+16) Просмотреть содержимое в реальном времени (команда grep) изучите как она работает 
+tail -f /путькпапке/путькпапке/file_1.txt
+
+17) Вывести несколько первых строк из текстового файла 
+head -n3 file_1.txt
+
+18) Вывести несколько последних строк из текстового файла 
+tail -n2 file_1.txt
+
+19) Просмотреть содержимое длинного файла (команда less) изучите как она работает 
+less file_1.txt
+
+20) вывести дату и время date
+
+
+* 1) Отправить http запрос на сервер - в терминале  curl https://api.quarantine.country/api/v1/regions
+Получила ответ:
+
+{"status":200,"type":"stack","data":[{"key":"afghanistan","name":"Afghanistan","iso3166a2":"AF","iso3166a3":"AFG","iso3166numeric":4},{"key":"albania","name":"Albania","iso3166a2":"AL","iso3166a3":"ALB","iso3166numeric":248},{"key":"algeria","name":"Algeria","iso3166a2":"DZ","iso3166a3":"DZA","iso3166numeric":12},{"key":"andorra","name":"Andorra","iso3166a2":"AD","iso3166a3":"AND","iso3166numeric":20},{"key":"angola","name":"Angola","iso3166a2":"AO","iso3166a3":"AGO","iso3166numeric":24},{"key":"anguilla","name":"Anguilla".....
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+В терминале пишем vim filename.txt
+В файле прописываем все нужные команды
+
+#!/bin/bash
+cd Example/
+mkdir {Papka1,Papka2,Papka3}
+cd Papka1/
+touch {file_1,file_2,file_3}.txt | touch {file_4,file_5}.json
+mkdir {Folder1,Folder2,Folder3}
+ls -la Foldername/
+mv{filename1,filename2}.txt FolderName(куда нужно переместить)
+
+Сохраняем и выходим :wq
+
+В терминале пишем ./filename 
