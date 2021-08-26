@@ -1,11 +1,16 @@
-{
-	"info": {
-		"_postman_id": "4fd11a32-8259-4a43-b2e0-f455918bafac",
-		"name": "Homework1",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
+1 Задание EP_1
+Method: GET
+EndPoint: /get_method
+request url params: 
+ name: str
+ age: int
+
+response: 
+[
+    “Str”,
+    “Str”
+]
+
 			"name": "EP_1",
 			"request": {
 				"method": "GET",
@@ -38,6 +43,26 @@
 			"response": []
 		},
 		{
+
+
+2 Задание 
+EP_2
+Method: POST
+EndPoint: /user_info_3
+request form data: 
+ name: str
+ age: int
+ salary: int
+
+response: 
+{'name': name,
+          'age': age,
+          'salary': salary,
+          'family': {'children': [['Alex', 24], ['Kate', 12]],
+                     'u_salary_1_5_year': salary * 4}}
+
+
+
 			"name": "EP_2",
 			"request": {
 				"method": "POST",
@@ -80,6 +105,22 @@
 			"response": []
 		},
 		{
+
+
+3 Задание EP_3
+Method: GET
+EndPoint: /object_info_1
+request url params: 
+ name: str
+ age: int
+ weight: int
+
+response: 
+{'name': name,
+          'age': age,
+          'daily_food': weight * 0.012,
+          'daily_sleep': weight * 2.5}
+
 			"name": "EP_3",
 			"request": {
 				"method": "GET",
@@ -116,6 +157,29 @@
 			"response": []
 		},
 		{
+
+4 Задание 
+EP_4
+Method: GET
+EndPoint: /object_info_2
+request url params: 
+ name: str
+ age: int
+ salary: int
+
+response: 
+{'start_qa_salary': salary,
+          'qa_salary_after_6_months': salary * 2,
+          'qa_salary_after_12_months': salary * 2.7,
+          'qa_salary_after_1.5_year': salary * 3.3,
+          'qa_salary_after_3.5_years': salary * 3.8,
+          'person': {'u_name': [user_name, salary, age],
+                     'u_age': age,
+                     'u_salary_5_years': salary * 4.2}
+          }
+
+
+
 			"name": "EP_4",
 			"request": {
 				"method": "GET",
@@ -188,6 +252,30 @@
 			"response": []
 		},
 		{
+
+5 Задание EP_5
+Method: GET
+EndPoint: /object_info_3
+request url params: 
+ name: str
+ age: int
+ salary: int
+
+response: 
+{'name': name,
+          'age': age,
+          'salary': salary,
+          'family': {'children': [['Alex', 24], ['Kate', 12]],
+                     'pets': {'cat':{'name':'Sunny',
+                                     'age': 3},
+                              'dog':{'name':'Luky',
+                                     'age': 4}},
+                     'u_salary_1_5_year': salary * 4}
+          }
+
+
+
+
 			"name": "EP_5",
 			"request": {
 				"method": "GET",
@@ -224,6 +312,24 @@
 			"response": []
 		},
 		{
+
+6 Задание 
+EP_6
+Method: GET
+EndPoint: /object_info_4
+request url params: 
+ name: str
+ age: int
+ salary: int
+
+response: 
+{'name': name,
+          'age': int(age),
+          'salary': [salary, str(salary * 2), str(salary * 3)]}
+
+
+
+
 			"name": "EP_6",
 			"request": {
 				"method": "GET",
@@ -260,7 +366,32 @@
 			"response": []
 		},
 		{
-			"name": "EP_7",
+
+
+7 Задание
+
+EP_7
+Method: POST
+EndPoint: /user_info_2
+request form data: 
+ name: str
+ age: int
+ salary: int
+
+response: 
+{'start_qa_salary': salary,
+          'qa_salary_after_6_months': salary * 2,
+          'qa_salary_after_12_months': salary * 2.7,
+          'qa_salary_after_1.5_year': salary * 3.3,
+          'qa_salary_after_3.5_years': salary * 3.8,
+          'person': {'u_name': [user_name, salary, age],
+                     'u_age': age,
+                     'u_salary_5_years': salary * 4.2}
+          }
+	
+
+
+		"name": "EP_7",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -303,3 +434,4 @@
 		}
 	]
 }
+
